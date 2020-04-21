@@ -1,0 +1,48 @@
+// listing
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  @at-root .calendar-event {
+    ul {
+      li {
+        padding-right: 0;
+        h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        .date {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .dots {
+    position: absolute;
+    right: 0;
+  }
+  li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 30px;
+  }
+  &-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: $list-icon-bg;
+    margin-right: 15px;
+    color: $white;
+    text-align: center;
+    line-height: 59px;
+    font-size: $base-size * 1.5;
+  }
+  &-text {
+    span {
+      font-size: $base-size - 3;
+    }
+  }
+}

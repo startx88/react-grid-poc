@@ -1,0 +1,40 @@
+// Topbar
+.topbar {
+  height: $topbar-base-height;
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    .nav-item {
+      margin-left: 10px;
+      &:not(.dropdown) {
+        .nav-link {
+          color: $brand-color-hover;
+          font-size: 20px;
+          .badge {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            color: $white;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .avatar-text {
+    color: $gray-900;
+    font-size: $base-size - 2;
+    font-weight: 500;
+  }
+  .img-profile {
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid $white;
+    display: inline-block;
+    img {
+      width: 100%;
+    }
+  }
+}

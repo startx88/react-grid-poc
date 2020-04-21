@@ -1,0 +1,32 @@
+.date {
+  font-size: $base-size - 2;
+  color: #aeb5bd;
+  margin-bottom: 10px;
+  time {
+    &:last-child {
+      &:before {
+        content: "-";
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+    &:only-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .date-icon {
+    span {
+      color: inherit;
+    }
+    time {
+      margin-left: 5px;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.card-tile {
+  background-color: $white;
+  padding: 25px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px $grid-shadow-color;
+  height: 100%;
+  &-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 89px;
+    font-size: $base-size * 2;
+  }
+  &-text {
+    text-align: right;
+  }
+  h5 {
+    font-weight: bold;
+    color: #aeabab;
+  }
+  small {
+    font-weight: 500;
+    color: $black;
+    font-size: $base-size * 3;
+  }
+  .inline {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    padding: 0;
+    li {
+      margin-left: 15px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.react-grid-layout {
+  .static {
+    .react-resizable-handle {
+      visibility: hidden;
+    }
+  }
+
+  .widget {
+    .react-resizable-handle {
+      visibility: hidden;
+    }
+
+    &:hover {
+      .react-resizable-handle {
+        visibility: visible;
+      }
+    }
+
+    &.ht {
+      height: 60px !important;
+      overflow: hidden;
+      &:hover {
+        .react-resizable-handle {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}

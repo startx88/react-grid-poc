@@ -1,0 +1,33 @@
+// Sidebar
+.sidebar {
+  width: $sidebar-collapsed-width;
+  min-height: 100vh;
+  background-color: $brand-color;
+  .menu {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .navbar-nav {
+    margin-bottom: 35px;
+  }
+  .inner-wrap {
+    padding: 15px;
+  }
+  .nav-item {
+    position: relative;
+    .nav-link {
+      color: $white;
+      font-size: $base-size + 4;
+      font-weight: 300;
+      padding: 10px 15px;
+      span {
+        margin-right: 15px;
+      }
+      &:hover,
+      &.active {
+        background-color: $brand-color-hover;
+        border-radius: 5px;
+      }
+    }
+  }
+}

@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import App from './App/App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
+import './_lib'
+import "react-grid-layout/css/styles.css"
+import "react-resizable/css/styles.css"
+import './index.scss';
+
+
+const Root = props => {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  )
+}
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+  <Root />
+  ,
   document.getElementById('root')
 );
 

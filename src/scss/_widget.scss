@@ -1,0 +1,87 @@
+.widget {
+  background-color: $white;
+  box-shadow: 1px 2px 5px $grid-shadow-color;
+  border-radius: 5px;
+  &-title,
+  &-body {
+    padding: 15px;
+  }
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    color: $black;
+    border-bottom: 2px solid $border-color;
+    padding-right: 120px;
+    word-break: break-all;
+  }
+  &-body {
+    height: calc(100% - 60px);
+    overflow: auto;
+  }
+  &-action {
+    position: absolute;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    button {
+      margin-left: 12px;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      color: #919497;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      &:hover {
+        color: $brand-color-hover;
+      }
+      span {
+        height: auto;
+        opacity: 1;
+      }
+    }
+    .minimize,
+    .maximize {
+      width: 18px;
+      height: 18px;
+      outline: none;
+    }
+    .minimize {
+      &:after {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #afb5bc;
+      }
+      &:hover {
+        &:after {
+          background-color: $brand-color-hover;
+        }
+      }
+    }
+    .maximize {
+      border-radius: 4px;
+      border: 2px solid #afb5bc;
+      &:hover {
+        border-color: $brand-color-hover;
+      }
+    }
+    .close {
+      font-size: $base-size + 3;
+    }
+  }
+}
+
+.dots {
+  text-align: center;
+  min-width: 24px;
+  margin-left: 3px;
+  cursor: pointer;
+  color: #afb5bc;
+  &:hover {
+    color: $brand-color-hover;
+  }
+}
